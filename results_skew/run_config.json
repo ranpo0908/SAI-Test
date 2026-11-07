@@ -1,0 +1,447 @@
+{
+  "settings": {
+    "studies": {
+      "skew_table": {
+        "cases": [
+          "skew_null",
+          "skew_alt"
+        ],
+        "n": [
+          50,
+          100,
+          200
+        ],
+        "B": [
+          99,
+          199
+        ],
+        "a": [
+          null
+        ]
+      },
+      "skew_near": {
+        "cases": [
+          "skew_near"
+        ],
+        "n": [
+          50,
+          100,
+          200,
+          300
+        ],
+        "B": [
+          99,
+          199
+        ],
+        "a": [
+          null
+        ]
+      },
+      "skew_path": {
+        "cases": [
+          "skew_path"
+        ],
+        "n": [
+          100,
+          200
+        ],
+        "B": [
+          99
+        ],
+        "a": [
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    "repetitions": 50,
+    "base_seed": 20260416,
+    "alpha": 0.05,
+    "solver": "full",
+    "transform": "logistic",
+    "run_type": "manuscript",
+    "distribution_parameters": {
+      "gaussian_null": {
+        "family": "normal",
+        "location": [
+          0,
+          1
+        ],
+        "scale": [
+          [
+            1,
+            0.3
+          ],
+          [
+            0.3,
+            1
+          ]
+        ]
+      },
+      "gaussian_alt": {
+        "family": "normal",
+        "location": [
+          2,
+          1
+        ],
+        "scale": [
+          [
+            1,
+            0.5
+          ],
+          [
+            0.5,
+            2
+          ]
+        ]
+      },
+      "gaussian_near": {
+        "family": "normal",
+        "location": [
+          1,
+          1
+        ],
+        "scale": [
+          [
+            4,
+            0.4
+          ],
+          [
+            0.4,
+            1
+          ]
+        ]
+      },
+      "skew_null": {
+        "family": "skew-normal",
+        "location": [
+          0,
+          1
+        ],
+        "scale": [
+          [
+            1,
+            0.3
+          ],
+          [
+            0.3,
+            4
+          ]
+        ],
+        "shape": [
+          1,
+          4
+        ]
+      },
+      "skew_alt": {
+        "family": "skew-normal",
+        "location": [
+          1,
+          1
+        ],
+        "scale": [
+          [
+            1,
+            0.3
+          ],
+          [
+            0.3,
+            4
+          ]
+        ],
+        "shape": [
+          4,
+          1
+        ]
+      },
+      "skew_near": {
+        "family": "skew-normal",
+        "location": [
+          0,
+          1
+        ],
+        "scale": [
+          [
+            1,
+            0.3
+          ],
+          [
+            0.3,
+            1
+          ]
+        ],
+        "shape": [
+          4,
+          1
+        ]
+      }
+    },
+    "path_parameters": {
+      "skew_path": [
+        {
+          "a": -5,
+          "family": "skew-normal",
+          "location": [
+            0,
+            -5.0
+          ],
+          "scale": [
+            [
+              1,
+              0.3
+            ],
+            [
+              0.3,
+              4
+            ]
+          ],
+          "shape": [
+            1,
+            4
+          ]
+        },
+        {
+          "a": -4,
+          "family": "skew-normal",
+          "location": [
+            0,
+            -4.0
+          ],
+          "scale": [
+            [
+              1,
+              0.3
+            ],
+            [
+              0.3,
+              4
+            ]
+          ],
+          "shape": [
+            1,
+            4
+          ]
+        },
+        {
+          "a": -3,
+          "family": "skew-normal",
+          "location": [
+            0,
+            -3.0
+          ],
+          "scale": [
+            [
+              1,
+              0.3
+            ],
+            [
+              0.3,
+              4
+            ]
+          ],
+          "shape": [
+            1,
+            4
+          ]
+        },
+        {
+          "a": -2,
+          "family": "skew-normal",
+          "location": [
+            0,
+            -2.0
+          ],
+          "scale": [
+            [
+              1,
+              0.3
+            ],
+            [
+              0.3,
+              4
+            ]
+          ],
+          "shape": [
+            1,
+            4
+          ]
+        },
+        {
+          "a": -1,
+          "family": "skew-normal",
+          "location": [
+            0,
+            -1.0
+          ],
+          "scale": [
+            [
+              1,
+              0.3
+            ],
+            [
+              0.3,
+              4
+            ]
+          ],
+          "shape": [
+            1,
+            4
+          ]
+        },
+        {
+          "a": 0,
+          "family": "skew-normal",
+          "location": [
+            0,
+            0.0
+          ],
+          "scale": [
+            [
+              1,
+              0.3
+            ],
+            [
+              0.3,
+              4
+            ]
+          ],
+          "shape": [
+            1,
+            4
+          ]
+        },
+        {
+          "a": 1,
+          "family": "skew-normal",
+          "location": [
+            0,
+            1.0
+          ],
+          "scale": [
+            [
+              1,
+              0.3
+            ],
+            [
+              0.3,
+              4
+            ]
+          ],
+          "shape": [
+            1,
+            4
+          ]
+        },
+        {
+          "a": 2,
+          "family": "skew-normal",
+          "location": [
+            0,
+            2.0
+          ],
+          "scale": [
+            [
+              1,
+              0.3
+            ],
+            [
+              0.3,
+              4
+            ]
+          ],
+          "shape": [
+            1,
+            4
+          ]
+        },
+        {
+          "a": 3,
+          "family": "skew-normal",
+          "location": [
+            0,
+            3.0
+          ],
+          "scale": [
+            [
+              1,
+              0.3
+            ],
+            [
+              0.3,
+              4
+            ]
+          ],
+          "shape": [
+            1,
+            4
+          ]
+        },
+        {
+          "a": 4,
+          "family": "skew-normal",
+          "location": [
+            0,
+            4.0
+          ],
+          "scale": [
+            [
+              1,
+              0.3
+            ],
+            [
+              0.3,
+              4
+            ]
+          ],
+          "shape": [
+            1,
+            4
+          ]
+        },
+        {
+          "a": 5,
+          "family": "skew-normal",
+          "location": [
+            0,
+            5.0
+          ],
+          "scale": [
+            [
+              1,
+              0.3
+            ],
+            [
+              0.3,
+              4
+            ]
+          ],
+          "shape": [
+            1,
+            4
+          ]
+        }
+      ]
+    },
+    "feasibility_tolerance": 1e-09,
+    "constraint_tolerance": 1e-08
+  },
+  "expected_repetitions": 2100,
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.16.3"
+  },
+  "source_sha256": {
+    "construct_test.py": "d9e54202f214ee696c47c001d7670a4e11e36db4b1116051b63e6176d927d021",
+    "generate_samples.py": "bf4a6c9c08f5f750cdeb97ac6f540377ba35f99b9f589967de83a989c19cd1ea",
+    "run_experiments.py": "fb42e34fdf2619e44b91ac1b248f025b45b6197941e84397e15fe6f274c6a2e2"
+  }
+}
